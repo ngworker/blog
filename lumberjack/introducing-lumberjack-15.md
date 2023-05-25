@@ -6,15 +6,17 @@ We are pleased to share that we've just released @ngworker/lumberjack version 15
 
 ## Better Type Safety
 
-First on our list, we've introduced the use of the newest type-safe `inject` function for injecting all possible dependencies. This is just a small step towards improving the type safety of our source code and aligning our Angular implementations with recent standards.
+First on our list, we've introduced the use of the newest type-safe `inject` function moving away from constructor paramter decorators. This is just a small step towards improving the type safety (it is quite good) of our source code and aligning our Angular implementations with recent standards.
 
 ## Keeping Current
 
-We believe it's important to stay up-to-date. With that in mind, we've updated to Angular version 15, Nx version 16.1, and Node 18. Please note, this will introduce some breaking changes, but we trust you'll navigate them like the pros you are!
+We are all excited about everything that's happening on the JavaScript world. That's why we will continue putting efforts on keeping Lumberjack up to date with the latest version of Angular and any other tool that's part of the Lumberjack suite. This time, we have updated to Angular version 15, Nx version 16.1, and Node 18. Please note, this will introduce breaking changes; make sure to update to Angular 15 before upgrading Lumberjack and verify that your other dependecies are compatible with Node 18.
 
 ## Supporting Standalone Angular Applications
 
-A significant change in this version is the added support for standalone Angular applications. Now, you can include Lumberjack directly in the `bootstrapApplication` function. Here's a simple example:
+And the cherry of the cake is...
+
+Our most exciting announcement is that we've added support standalone Angular applications. Now, you can include Lumberjack directly in the `bootstrapApplication` function. Here's a simple example of how to use the new APIs:
 
 ```ts
 bootstrapApplication(AppComponent, {
@@ -26,7 +28,7 @@ bootstrapApplication(AppComponent, {
 });
 ```
 
-## Enhanced Driver Configuration
+### Enhanced Driver Configuration
 
 We've also made it possible for you to enable the standalone providers for the out-of-the-box Lumberjack drivers. Here's how you can do it:
 
@@ -42,11 +44,11 @@ bootstrapApplication(AppComponent, {
 });
 ```
 
-## Advanced Configuration for Those Who Want More
+### Advanced Configuration for Those Who Want More
 
-Configuring `Lumberjack` and the `ConsoleDriver` with the new API should be a familiar compared to how we configure the modules.
+Configuring `Lumberjack` and the `ConsoleDriver` with the new API should represent a similar experience that what we have been able to do before with Modules.
 
-It is as simple as passing the configuration object as the single parameter of the provide functions.
+Both `Lumberjack` and the `ConsoleDriver` can be configure without any extra arguments or by passing a configuration object as the single parameter of the provide functions.
 
 ```ts
 bootstrapApplication(AppComponent, {
@@ -76,7 +78,7 @@ bootstrapApplication(AppComponent, {
     ),
 ```
 
-Or the `withHttpOptions`
+Or the `withHttpConfig`
 
 ```ts
 bootstrapApplication(AppComponent, {
@@ -117,7 +119,7 @@ bootstrapApplication(AppComponent, {
 
 ## Continuous Module Support
 
-We want to assure you that we continue to support modules. The new standalone APIs are a complement, not a replacement.
+We want to assure you that we continue to support modules. The new standalone APIs are a complement, not a replacement. Choose your poison.
 
 ## Wrapping Up
 
