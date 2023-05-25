@@ -10,7 +10,7 @@ First on our list, we've introduced the use of the newest type-safe `inject` fun
 
 ## Keeping Current
 
-We are all excited about everything that's happening on the JavaScript world. That's why we will continue putting efforts on keeping Lumberjack up to date with the latest version of Angular and any other tool that's part of the Lumberjack suite. This time, we have updated to Angular version 15, Nx version 16.1, and Node 18. Please note, this will introduce breaking changes; make sure to update to Angular 15 before upgrading Lumberjack and verify that your other dependecies are compatible with Node 18.
+We are all excited about everything that's happening on the JavaScript world. That's why we will continue putting efforts on keeping Lumberjack up to date with the latest version of Angular and any other tool that's part of the Lumberjack suite. This time, we have updated to Angular version 15, Nx version 16.1, and Node 18. Please note, this will introduce breaking changes; make sure to update to Angular 15 before upgrading Lumberjack.
 
 ## Supporting Standalone Angular Applications
 
